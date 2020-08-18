@@ -6,6 +6,16 @@ An experimental block based theme, which supports full site editing. Learn more 
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. Your Success is Our Mission."></a>
 
+## Table of Contents
+- [WDS Block Based Theme](#wds-block-based-theme)
+  - [Requirements](#requirements)
+  - [Theme Installation](#theme-installation)
+  - [Glossary](#glossary)
+  - [The Site Editor as a Page Builder](#the-site-editor-as-a-page-builder)
+    - [Export (Optional)](#export-optional)
+  - [Global Styles via Theme JSON](#global-styles-via-theme-json)
+  - [Theme Support](#theme-support)
+
 ## Requirements
 
 * The [Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/) must be installed and activated.
@@ -89,7 +99,7 @@ You can even edit Templates and Template Parts individually from the Appearance 
 
 ![screenshot](https://dl.dropbox.com/s/irxr0m3ztmswc2l/Screen%20Shot%202020-08-18%20at%2012.17.53%20PM.png?dl=0)
 
-## Export (Optional)
+### Export (Optional)
 
 When finished in the Site Editor, you can even **export the your changes from the "Tools" menu**:
 
