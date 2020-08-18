@@ -12,6 +12,7 @@ function wds_block_based_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'align-wide' );
+	add_theme_support( 'custom-units' );
 	add_theme_support( 'editor-color-palette',
 		[
 			[
@@ -20,12 +21,29 @@ function wds_block_based_theme_setup() {
 				'color' => '#a156b4',
 			],
 			[
-				'name'  => __( 'very dark gray', 'wdsbbt' ),
-				'slug'  => 'very-dark-gray',
-				'color' => '#444',
+				'name'  => __( 'very light gray', 'wdsbbt' ),
+				'slug'  => 'very-light-gray',
+				'color' => '#f1f1f1',
 			],
 		]
 	);
+	add_theme_support( 'editor-font-sizes', array(
+		array(
+			'name' => __( 'Small', 'wdsbbt' ),
+			'size' => 12,
+			'slug' => 'small',
+		),
+		array(
+			'name' => __( 'Regular', 'wdsbbt' ),
+			'size' => 16,
+			'slug' => 'regular',
+		),
+		array(
+			'name' => __( 'Large', 'wdsbbt' ),
+			'size' => 36,
+			'slug' => 'large',
+		),
+	) );
 };
 add_action( 'after_setup_theme', 'wds_block_based_theme_setup' );
 
