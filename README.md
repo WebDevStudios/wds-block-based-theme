@@ -150,6 +150,10 @@ Block based themes support an `experimental-theme.json` file. This file:
 }
 ```
 
+The settings above, would set all `<h2>` blocks to `#a156b4`
+
+![screenshot](https://dl.dropbox.com/s/jqmjt9qt2pu5xfg/Screen%20Shot%202020-08-18%20at%201.36.33%20PM.png?dl=0)
+
 Learn more about [Theme JSON](https://developer.wordpress.org/block-editor/developers/themes/theme-json/).
 
 ---
