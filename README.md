@@ -120,7 +120,6 @@ Block based themes support an `experimental-theme.json` file. This file:
 
 ```json
 {
-  // Create a global variable.
   "global": {
     "presets": {
       "color": [
@@ -132,7 +131,6 @@ Block based themes support an `experimental-theme.json` file. This file:
     }
   },
 
-  // Use the global variable.
   "core/heading/h1": {
     "styles": {
       "color": {
