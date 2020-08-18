@@ -8,9 +8,8 @@ An experimental block based theme, which supports full site editing. Learn more 
 
 ## Requirements
 
-The [Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/) must be installed and activated.
-
-Enable "Full Site Editing" under "Experiments".
+* The [Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/) must be installed and activated.
+* Enable "Full Site Editing" under "Experiments":
 
 ![screenshot](https://dl.dropbox.com/s/9oj24opmbkvbfvh/Screen%20Shot%202020-08-18%20at%2011.36.50%20AM.png?dl=0)
 
