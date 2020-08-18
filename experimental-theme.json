@@ -7,8 +7,8 @@
           "value": "#a156b4"
         },
         {
-          "slug": "very-dark-gray",
-          "value": "#444"
+          "slug": "very-light-gray",
+          "value": "#f1f1f1"
         }
       ],
       "line-height": [
@@ -24,7 +24,55 @@
           "slug": "large",
           "value": "2.5"
         }
+      ],
+      "font-size": [
+        {
+          "slug": "small",
+          "value": "0.5rem"
+        },
+        {
+          "slug": "regular",
+          "value": "1rem"
+        },
+        {
+          "slug": "large",
+          "value": "2rem"
+        }
       ]
+    },
+
+    "styles": {
+      "color": {
+        "background": "var(--wp--preset--color--very-light-gray)"
+      }
+    }
+  },
+
+  "core/heading/h2": {
+    "styles": {
+      "color": {
+        "text": "var( --wp--preset--color--strong-magenta )"
+      },
+      "typography": {
+        "fontSize": "var(--wp--preset--font-size--large)",
+        "lineHeight": "var(--wp--preset--line-height--medium)"
+      }
+    }
+  },
+
+  "core/paragraph": {
+    "styles": {
+      "typography": {
+        "fontSize": "calc(1px * var( --wp--preset--font-size--regular)"
+      }
+    }
+  },
+
+  "core/group": {
+    "styles": {
+      "color": {
+        "background": "#ffffff"
+      }
     }
   }
 }
