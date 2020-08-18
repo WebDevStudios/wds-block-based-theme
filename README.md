@@ -1,8 +1,8 @@
 # WDS Block Based Theme
 
-An experimental block based theme, which supports full site editing.
+An experimental block based theme, which supports full site editing. Learn more about building [Block Based Themes](https://developer.wordpress.org/block-editor/tutorials/block-based-themes/) for WordPress.
 
-Learn more https://developer.wordpress.org/block-editor/tutorials/block-based-themes/
+*Note: the following features are still experimental, and should not be used in a production environment.*
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. Your Success is Our Mission."></a>
 
@@ -90,9 +90,9 @@ You can even edit Templates and Template Parts individually from the Appearance 
 
 ![screenshot](https://dl.dropbox.com/s/irxr0m3ztmswc2l/Screen%20Shot%202020-08-18%20at%2012.17.53%20PM.png?dl=0)
 
----
+## Export (Optional)
 
-When finished in the Site Editor, **export the site from the "Tools" menu**:
+When finished in the Site Editor, you can even **export the your changes from the "Tools" menu**:
 
 ![screenshot](https://dl.dropbox.com/s/xhimdjroyrgih9a/Screen%20Shot%202020-08-18%20at%2012.05.09%20PM.png?dl=0)
 
@@ -109,5 +109,83 @@ Place the exported Templates and Template Parts files into your theme:
 Everything you just created in the Site Editor, is now available in your theme as Block Grammar:
 
 ![screenshot](https://dl.dropbox.com/s/w6mwivtu36cv7px/Screen%20Shot%202020-08-18%20at%2012.21.16%20PM.png?dl=0)
+
+## Global Styles via Theme JSON
+
+Block based themes support an `experimental-theme.json` file. This file:
+
+* Creates CSS variables (also called CSS custom properties) that can be used to style blocks both on the front and in the editor.
+* Sets global styles.
+* Sets styles for individual block types.
+
+```json
+{
+  // Create a global variable.
+  "global": {
+    "presets": {
+      "color": [
+        {
+          "slug": "strong-magenta",
+          "value": "#a156b4"
+        }
+      ]
+    }
+  },
+
+  // Use the global variable.
+  "core/heading/h1": {
+    "styles": {
+      "color": {
+        "text": "var( --wp--preset--color--strong-magenta )"
+      }
+    }
+  }
+}
+```
+
+Learn more about [Theme JSON](https://developer.wordpress.org/block-editor/developers/themes/theme-json/).
+
+---
+
+## Theme Support
+
+Block based themes will continue to use `add_theme_support()` enhancements to opt-in to extend and customize Core WordPress features.
+
+* `wp-block-styles`
+* `align-wide`
+* `editor-color-palette`
+* `editor-gradient-presets`
+* `editor-font-sizes`
+* `custom-line-height`
+* `custom-units`
+* `dark-editor-style`
+* `responsive-embeds`
+* `experimental-custom-spacing`
+* `experimental-link-color`
+
+The follow example sets default colors in the Block Editor. This would be helpful if you needed to set a client's colors for branding purposes:
+
+```php
+function yourtheme_setup_theme_supported_features() {
+    add_theme_support( 'editor-color-palette', array(
+        array(
+            'name' => __( 'strong magenta', 'yourtheme' ),
+            'slug' => 'strong-magenta',
+            'color' => '#a156b4',
+        ),
+        array(
+            'name' => __( 'very dark gray', 'yourtheme' ),
+            'slug' => 'very-dark-gray',
+            'color' => '#444',
+        ),
+    ) );
+}
+
+add_action( 'after_setup_theme', 'yourtheme_setup_theme_supported_features' );
+```
+
+Learn more about available [Theme Support](https://developer.wordpress.org/block-editor/developers/themes/theme-support/) options.
+
+---
 
 Learn more https://developer.wordpress.org/block-editor/tutorials/block-based-themes/
