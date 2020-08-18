@@ -105,7 +105,7 @@ When finished in the Site Editor, you can even **export the your changes from th
 
 ![screenshot](https://dl.dropbox.com/s/xhimdjroyrgih9a/Screen%20Shot%202020-08-18%20at%2012.05.09%20PM.png?dl=0)
 
-*This action will export all of the Block Grammar into their respective Template and Template Part files.*
+*This action will export all of the Block Grammar into their respective Template and Template Part files.* This feature is similar to ACF's [Local JSON](https://www.advancedcustomfields.com/resources/local-json/).
 
 ---
 
@@ -121,7 +121,9 @@ Everything you just created in the Site Editor, is now available in your theme a
 
 ## Global Styles via Theme JSON
 
-Block based themes support an `experimental-theme.json` file. This file:
+Block based themes support an `experimental-theme.json` file. This feature feels similar to [theme-ui](https://theme-ui.com/home).
+
+This file:
 
 * Creates CSS variables (also called CSS custom properties) that can be used to style blocks both on the front and in the editor.
 * Sets global styles.
