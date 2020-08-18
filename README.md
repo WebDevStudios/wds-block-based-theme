@@ -140,7 +140,7 @@ Block based themes support an `experimental-theme.json` file. This file:
     }
   },
 
-  "core/heading/h1": {
+  "core/heading/h2": {
     "styles": {
       "color": {
         "text": "var( --wp--preset--color--strong-magenta )"
@@ -150,9 +150,9 @@ Block based themes support an `experimental-theme.json` file. This file:
 }
 ```
 
-The settings above, would set all `<h2>` blocks to `#a156b4`
+The settings above, would set all `<h2>` blocks to `#a156b4`:
 
-![screenshot](https://dl.dropbox.com/s/jqmjt9qt2pu5xfg/Screen%20Shot%202020-08-18%20at%201.36.33%20PM.png?dl=0)
+![screenshot](https://dl.dropbox.com/s/265wcfzsuls9vz6/Screen%20Shot%202020-08-18%20at%201.38.40%20PM.png?dl=0)
 
 Learn more about [Theme JSON](https://developer.wordpress.org/block-editor/developers/themes/theme-json/).
 
