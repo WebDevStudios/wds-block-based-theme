@@ -80,6 +80,7 @@ theme
 <!-- /wp:paragraph -->
 <!-- wp:template-part {"slug":"footer","theme":"yourtheme"} /-->
 ```
+---
 
 ## Site Editor as Page Builder
 
@@ -87,17 +88,15 @@ theme
 
 ![screenshot](https://dl.dropbox.com/s/9e26iy1dlvn2bva/Screen%20Shot%202020-08-18%20at%2012.06.47%20PM.png?dl=0)
 
----
-
 As you build, your Templates and Template Part block grammar a**re saved to the database**, which can be access under the Appearance menu:
 
 ![screenshot](https://dl.dropbox.com/s/bgo15p7xmt8pdt4/Screen%20Shot%202020-08-18%20at%2012.15.57%20PM.png?dl=0)
 
----
-
 You can even edit Templates and Template Parts individually from the Appearance menu:
 
 ![screenshot](https://dl.dropbox.com/s/irxr0m3ztmswc2l/Screen%20Shot%202020-08-18%20at%2012.17.53%20PM.png?dl=0)
+
+---
 
 ### Export (Optional)
 
@@ -105,7 +104,7 @@ When finished building your site, you can **export the your changes from the "To
 
 ![screenshot](https://dl.dropbox.com/s/xhimdjroyrgih9a/Screen%20Shot%202020-08-18%20at%2012.05.09%20PM.png?dl=0)
 
-*This action will export all of the Block Grammar into their respective Template and Template Part files.* This feature is similar to ACF's [Local JSON](https://www.advancedcustomfields.com/resources/local-json/).
+This action will export all of the Block Grammar into their respective Template and Template Part files. This feature is similar to ACF's [Local JSON](https://www.advancedcustomfields.com/resources/local-json/).
 
 Place the exported Templates and Template Parts files into your theme:
 
@@ -114,6 +113,16 @@ Place the exported Templates and Template Parts files into your theme:
 Everything you built in the Site Editor, is now available as code in your theme, which could be checked into version control or shipped to a client.
 
 ![screenshot](https://dl.dropbox.com/s/w6mwivtu36cv7px/Screen%20Shot%202020-08-18%20at%2012.21.16%20PM.png?dl=0)
+
+If you look close, you'll see an additional paramenter in your Template Part grammar:
+
+```html
+<!-- wp:template-part {"postID":94,"slug":"header","theme":"yourtheme"} /-->
+```
+
+This informs WordPress that there is a Template Part saved in the database, under `postID: 94`.
+
+---
 
 ## Global Styles via Theme JSON
 
