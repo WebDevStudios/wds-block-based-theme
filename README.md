@@ -134,6 +134,10 @@ This file:
 * Sets global styles.
 * Sets styles for individual block types.
 
+WordPress parses this file and makes these CSS variables available, without any need to write CSS.
+
+The following example would set a global CSS variable for all  `<h2>` Blocks:
+
 ```json
 {
   "global": {
@@ -156,8 +160,6 @@ This file:
   }
 }
 ```
-
-The settings above would set a global CSS variable for all  `<h2>` Blocks. WordPress parses this file and makes these CSS variables availabl, without you needed to write any actual CSS.
 
 ![screenshot](https://dl.dropbox.com/s/265wcfzsuls9vz6/Screen%20Shot%202020-08-18%20at%201.38.40%20PM.png?dl=0)
 
