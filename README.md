@@ -169,18 +169,18 @@ Learn more about [Theme JSON](https://developer.wordpress.org/block-editor/devel
 
 Block based themes will continue to leverage `add_theme_support()` as an opt-in, to extend and customize Core WordPress features.
 
-* `wp-block-styles`
 * `align-wide`
 * `block-nav-menus`
-* `editor-color-palette`
-* `editor-gradient-presets`
-* `editor-font-sizes`
 * `custom-line-height`
 * `custom-units`
 * `dark-editor-style`
-* `responsive-embeds`
+* `editor-color-palette`
+* `editor-gradient-presets`
+* `editor-font-sizes`
 * `experimental-custom-spacing`
 * `experimental-link-color`
+* `responsive-embeds`
+* `wp-block-styles`
 
 The following example sets default colors in the Block Editor:
 
