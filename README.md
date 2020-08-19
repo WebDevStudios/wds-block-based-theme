@@ -199,7 +199,6 @@ function yourtheme_setup_theme_supported_features() {
         ),
     ) );
 }
-
 add_action( 'after_setup_theme', 'yourtheme_setup_theme_supported_features' );
 ```
 This would be helpful if you needed to set your client's colors as defaults for branding purposes:
