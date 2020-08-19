@@ -175,6 +175,8 @@ Learn more about [Theme JSON](https://developer.wordpress.org/block-editor/devel
 
 Block based themes will continue to leverage `add_theme_support()` as an "opt-in" way to extend and customize Core WordPress features.
 
+The following features are:
+
 * `align-wide`
 * `block-nav-menus`
 * `custom-line-height`
@@ -188,7 +190,7 @@ Block based themes will continue to leverage `add_theme_support()` as an "opt-in
 * `responsive-embeds`
 * `wp-block-styles`
 
-The following example sets default colors in the Block Editor:
+This example uses `editor-color-palette` to set default colors in the Block Editor:
 
 ```php
 function yourtheme_setup_theme_supported_features() {
@@ -207,7 +209,7 @@ function yourtheme_setup_theme_supported_features() {
 }
 add_action( 'after_setup_theme', 'yourtheme_setup_theme_supported_features' );
 ```
-This would be helpful if you needed to set your client's colors as defaults for branding purposes:
+This would be helpful if you needed to set your client's branding colors as defaults in the Block Editor:
 
 ![screenshot](https://dl.dropbox.com/s/qyucddgsub2skn4/Screen%20Shot%202020-08-19%20at%208.06.49%20AM.png?dl=0)
 
