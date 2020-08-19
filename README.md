@@ -202,7 +202,7 @@ function yourtheme_setup_theme_supported_features() {
 
 add_action( 'after_setup_theme', 'yourtheme_setup_theme_supported_features' );
 ```
-This would be helpful if you needed to set your client's colors for branding purposes:
+This would be helpful if you needed to set your client's colors as defaults for branding purposes:
 
 ![screenshot](https://dl.dropbox.com/s/qyucddgsub2skn4/Screen%20Shot%202020-08-19%20at%208.06.49%20AM.png?dl=0)
 
