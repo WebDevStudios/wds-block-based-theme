@@ -18,20 +18,20 @@ An experimental block based theme, which supports full site editing. Learn more 
 
 ## Requirements
 
-* The [Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/) must be installed and activated.
-* Enable "Full Site Editing" under "Experiments":
+1 The [Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/) must be installed and activated.
+2 Enable "Full Site Editing" under "Experiments":
 
 ![screenshot](https://dl.dropbox.com/s/9oj24opmbkvbfvh/Screen%20Shot%202020-08-18%20at%2011.36.50%20AM.png?dl=0)
 
 ## Theme Installation
 
-Clone the repo into `/wp-content/themes`
+Clone this repo into `/wp-content/themes`:
 
 ```bash
 git clone git@github.com:WebDevStudios/wds-block-based-theme.git
 ```
 
-Activate the theme
+Activate the theme:
 
 ![screenshot](https://dl.dropbox.com/s/f372jqm7xtvmcnm/Screen%20Shot%202020-08-18%20at%2011.43.21%20AM.png?dl=0)
 
@@ -89,7 +89,7 @@ theme
 
 ---
 
-As you build, your Templates and Template Parts are also saved to the database, and can be access under the Appearance menu:
+As you build, your Templates and Template Parts are saved to the database, which can be access under the Appearance menu:
 
 ![screenshot](https://dl.dropbox.com/s/bgo15p7xmt8pdt4/Screen%20Shot%202020-08-18%20at%2012.15.57%20PM.png?dl=0)
 
@@ -101,7 +101,7 @@ You can even edit Templates and Template Parts individually from the Appearance 
 
 ### Export (Optional)
 
-When finished in the Site Editor, you can even **export the your changes from the "Tools" menu**:
+When finished you can even **export the your changes from the "Tools" menu**:
 
 ![screenshot](https://dl.dropbox.com/s/xhimdjroyrgih9a/Screen%20Shot%202020-08-18%20at%2012.05.09%20PM.png?dl=0)
 
@@ -121,7 +121,7 @@ Everything you just created in the Site Editor, is now available in your theme a
 
 ## Global Styles via Theme JSON
 
-Block based themes support an `experimental-theme.json` file. This feature feels similar to [theme-ui](https://theme-ui.com/home).
+Block based themes support an `experimental-theme.json` file. This feature feels similar to [Theme-UI](https://theme-ui.com/home).
 
 This file:
 
@@ -166,6 +166,7 @@ Block based themes will continue to use `add_theme_support()` enhancements to op
 
 * `wp-block-styles`
 * `align-wide`
+* `block-nav-menus`
 * `editor-color-palette`
 * `editor-gradient-presets`
 * `editor-font-sizes`
@@ -176,7 +177,7 @@ Block based themes will continue to use `add_theme_support()` enhancements to op
 * `experimental-custom-spacing`
 * `experimental-link-color`
 
-The follow example sets default colors in the Block Editor. This would be helpful if you needed to set a client's colors for branding purposes:
+The following example sets default colors in the Block Editor. This would be helpful if you needed to set a client's colors for branding purposes:
 
 ```php
 function yourtheme_setup_theme_supported_features() {
