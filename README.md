@@ -114,13 +114,13 @@ Everything you built in the Site Editor, is now available as code in your theme,
 
 ![screenshot](https://dl.dropbox.com/s/w6mwivtu36cv7px/Screen%20Shot%202020-08-18%20at%2012.21.16%20PM.png?dl=0)
 
-If you look close, you'll see an additional paramenter in your Template Part grammar:
+If you look close, you'll see an additional `postID` paramenter in the Template Part grammar:
 
 ```html
 <!-- wp:template-part {"postID":94,"slug":"header","theme":"yourtheme"} /-->
 ```
 
-This informs WordPress that there is a Template Part saved in the database, under `postID: 94`.
+This informs WordPress that the Header is also saved in the database, under `postID: 94`.
 
 ---
 
