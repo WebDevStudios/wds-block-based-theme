@@ -100,7 +100,7 @@ You can even edit Templates and Template Parts individually from the Appearance 
 
 ### Export (Optional)
 
-When finished building your site, you can **export the your changes from the "Tools" menu**:
+When you're finished building your site, you can **export the your changes from the "Tools" menu**:
 
 ![screenshot](https://dl.dropbox.com/s/xhimdjroyrgih9a/Screen%20Shot%202020-08-18%20at%2012.05.09%20PM.png?dl=0)
 
