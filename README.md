@@ -132,7 +132,7 @@ This informs WordPress that the Header is also saved in the database, under `pos
 
 ## Global Styles via Theme JSON
 
-Block based themes support an `experimental-theme.json` file. This feature feels similar to [Theme UI](https://theme-ui.com/home). WordPress parses this file and makes these CSS variables available, without any need to write CSS.
+Block based themes support an `experimental-theme.json` file. WordPress parses this file and makes these CSS variables available, without any need to write CSS. This feature feels similar to [Theme UI](https://theme-ui.com/home).
 
 This `experimental-theme.json` file:
 
