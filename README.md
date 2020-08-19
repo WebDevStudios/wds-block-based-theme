@@ -134,7 +134,7 @@ This informs WordPress that the Header is also saved in the database, under `pos
 
 Block based themes support an `experimental-theme.json` file. WordPress parses this file and makes these CSS variables available, without any need to write CSS. This feature feels similar to [Theme UI](https://theme-ui.com/home).
 
-This `experimental-theme.json` file:
+The `experimental-theme.json` file:
 
 * Creates CSS variables (also called CSS custom properties) that can be used to style blocks both on the front and in the editor.
 * Sets global styles.
