@@ -157,7 +157,7 @@ This file:
 }
 ```
 
-The settings above would set a global CSS variable for all  `<h2>` Blocks:
+The settings above would set a global CSS variable for all  `<h2>` Blocks. WordPress parses this file and makes these CSS variables availabl, without you needed to write any actual CSS.
 
 ![screenshot](https://dl.dropbox.com/s/265wcfzsuls9vz6/Screen%20Shot%202020-08-18%20at%201.38.40%20PM.png?dl=0)
 
@@ -167,7 +167,7 @@ Learn more about [Theme JSON](https://developer.wordpress.org/block-editor/devel
 
 ## Theme Support
 
-Block based themes will continue to leverage `add_theme_support()` as an opt-in to extend and customize Core WordPress features.
+Block based themes will continue to leverage `add_theme_support()` as an opt-in, to extend and customize Core WordPress features.
 
 * `wp-block-styles`
 * `align-wide`
