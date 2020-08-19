@@ -71,7 +71,7 @@ theme
 <!-- wp:template-part {"slug":"header","theme":"yourtheme"} /-->
 ```
 
-**Templates** - An HTML container that displays Template Parts and Block Grammar. They follow the WordPress [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/)
+**Templates** - An HTML container that displays Template Parts and Block Grammar. They follow the WordPress [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/):
 
 ```html
 <!-- wp:template-part {"slug":"header","theme":"yourtheme"} /-->
