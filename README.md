@@ -167,7 +167,7 @@ Learn more about [Theme JSON](https://developer.wordpress.org/block-editor/devel
 
 ## Theme Support
 
-Block based themes will continue to use `add_theme_support()` enhancements to opt-in to extend and customize Core WordPress features.
+Block based themes will continue to leverage `add_theme_support()` as an opt-in to extend and customize Core WordPress features.
 
 * `wp-block-styles`
 * `align-wide`
