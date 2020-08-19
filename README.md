@@ -188,13 +188,13 @@ The following example sets default colors in the Block Editor:
 function yourtheme_setup_theme_supported_features() {
     add_theme_support( 'editor-color-palette', array(
         array(
-            'name' => __( 'strong magenta', 'yourtheme' ),
-            'slug' => 'strong-magenta',
+            'name'  => __( 'strong magenta', 'yourtheme' ),
+            'slug'  => 'strong-magenta',
             'color' => '#a156b4',
         ),
         array(
-            'name' => __( 'very light gray', 'yourtheme' ),
-            'slug' => 'very-light-gray',
+            'name'  => __( 'very light gray', 'yourtheme' ),
+            'slug'  => 'very-light-gray',
             'color' => '#f1f1f1',
         ),
     ) );
