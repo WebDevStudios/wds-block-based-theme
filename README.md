@@ -16,12 +16,16 @@ An experimental block based theme, which supports full site editing. Learn more 
   - [Global Styles via Theme JSON](#global-styles-via-theme-json)
   - [Theme Support](#theme-support)
 
+---
+
 ## Requirements
 
 1. The [Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/) must be installed and activated.
 2. Enable "Full Site Editing" under "Experiments":
 
 ![screenshot](https://dl.dropbox.com/s/9oj24opmbkvbfvh/Screen%20Shot%202020-08-18%20at%2011.36.50%20AM.png?dl=0)
+
+---
 
 ## Theme Installation
 
@@ -34,6 +38,8 @@ git clone git@github.com:WebDevStudios/wds-block-based-theme.git
 Activate the theme:
 
 ![screenshot](https://dl.dropbox.com/s/f372jqm7xtvmcnm/Screen%20Shot%202020-08-18%20at%2011.43.21%20AM.png?dl=0)
+
+---
 
 ## Glossary
 
