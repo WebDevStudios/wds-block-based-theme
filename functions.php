@@ -13,6 +13,7 @@ function wds_block_based_theme_setup() {
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'align-wide' );
 	add_theme_support( 'custom-units' );
+	add_theme_support( 'block-nav-menus' );
 	add_theme_support( 'editor-color-palette',
 		[
 			[
