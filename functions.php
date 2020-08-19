@@ -1,4 +1,18 @@
 <?php
+
+/**
+ * Enqueue theme styles.
+ */
+function wds_block_based_theme_scripts() {
+		wp_enqueue_style(
+			'wdsbbt-theme-style',
+			get_stylesheet_directory_uri() . '/style.css',
+			array(),
+			filemtime( dirname( __FILE__ ) . '/style.css' )
+		);
+	}
+add_action( 'wp_enqueue_scripts', 'wds_block_based_theme_scripts' );
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -47,15 +61,3 @@ function wds_block_based_theme_setup() {
 	) );
 };
 add_action( 'after_setup_theme', 'wds_block_based_theme_setup' );
-
-/**
- * Enqueue theme scripts and styles.
- */
-function wds_block_based_theme_scripts() {
-	wp_enqueue_style( 'wdsbbt-style', get_stylesheet_uri() );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'wds_block_based_theme_scripts' );
