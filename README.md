@@ -193,9 +193,9 @@ function yourtheme_setup_theme_supported_features() {
             'color' => '#a156b4',
         ),
         array(
-            'name' => __( 'very dark gray', 'yourtheme' ),
-            'slug' => 'very-dark-gray',
-            'color' => '#444',
+            'name' => __( 'very light gray', 'yourtheme' ),
+            'slug' => 'very-light-gray',
+            'color' => '#f1f1f1',
         ),
     ) );
 }
