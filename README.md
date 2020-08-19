@@ -157,7 +157,7 @@ This file:
 }
 ```
 
-The settings above would set all `<h2>` Block's color to `#a156b4`:
+The settings above would set a global CSS variable for all  `<h2>` Blocks:
 
 ![screenshot](https://dl.dropbox.com/s/265wcfzsuls9vz6/Screen%20Shot%202020-08-18%20at%201.38.40%20PM.png?dl=0)
 
