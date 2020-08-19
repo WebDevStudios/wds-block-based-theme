@@ -88,7 +88,7 @@ theme
 
 ![screenshot](https://dl.dropbox.com/s/9e26iy1dlvn2bva/Screen%20Shot%202020-08-18%20at%2012.06.47%20PM.png?dl=0)
 
-As you build, your Templates and Template Part block grammar a**re saved to the database**, which can be access under the Appearance menu:
+As you build, your Templates and Template Part block grammar **are saved to the database**, which can be accessed under the Appearance menu:
 
 ![screenshot](https://dl.dropbox.com/s/bgo15p7xmt8pdt4/Screen%20Shot%202020-08-18%20at%2012.15.57%20PM.png?dl=0)
 
