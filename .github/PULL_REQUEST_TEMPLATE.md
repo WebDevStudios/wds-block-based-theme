@@ -20,4 +20,4 @@ How do we test this?
 
 ### DOCUMENTATION
 
-Will this pull request require updating the theme documenation? Currently on [README.md](https://github.com/WebDevStudios/wds-block-based-theme/blob/main/README.md).
+Will this pull request require updating the theme documentation? Currently on [README.md](https://github.com/WebDevStudios/wds-block-based-theme/blob/main/README.md).
