@@ -1,12 +1,14 @@
 # WDS Block Based Theme
 
-An experimental block based theme, which supports full site editing. Learn more about building [Block Based Themes](https://developer.wordpress.org/block-editor/tutorials/block-based-themes/) for WordPress.
+A block based theme, which supports full site editing. Learn more about building [Block Based Themes](https://developer.wordpress.org/block-editor/tutorials/block-based-themes/) for WordPress.
 
-*Note: the following features are still experimental, and should not be used in a production environment.*
+> **Note**
+> With the release of WordPress 5.9, Site Editing is available as part of WordPress without installing Gutenberg. However, this theme started when these features were still experimental, and should not (yet) be used in a production environment.
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. Your Success is Our Mission."></a>
 
 ## Table of Contents
+
 - [WDS Block Based Theme](#wds-block-based-theme)
   - [Requirements](#requirements)
   - [Theme Installation](#theme-installation)
@@ -20,10 +22,10 @@ An experimental block based theme, which supports full site editing. Learn more 
 
 ## Requirements
 
-1. The [Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/) must be installed and activated.
-2. Enable "Full Site Editing" under "Experiments":
+> **Note**
+> The previous version of these notes included enabling Full Site Editing under Gutenberg settings, that is no longer necessary (or available, since it is not an experiment anymore).
 
-![screenshot](https://dl.dropbox.com/s/9oj24opmbkvbfvh/Screen%20Shot%202020-08-18%20at%2011.36.50%20AM.png?dl=0)
+1. _(Optionally)_ The [Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/) can be installed and activated. Gutenberg is no longer required but can be installed for the latest features regarding Site Editing.
 
 ---
 
@@ -51,12 +53,12 @@ theme
 |__ functions.php
 |__ index.php
 |__ experimental-theme.json
-|__ block-templates
+|__ templates
     |__ index.html
     |__ single.html
     |__ archive.html
     |__ ...
-|__ block-template-parts
+|__ parts
     |__ header.html
     |__ footer.html
     |__ sidebar.html
@@ -86,21 +88,22 @@ theme
 <!-- /wp:paragraph -->
 <!-- wp:template-part {"slug":"footer","theme":"yourtheme"} /-->
 ```
+
 ---
 
 ## Site Editor as Page Builder
 
 **Use the Site Editor** to build your site:
 
-![screenshot](https://dl.dropbox.com/s/9e26iy1dlvn2bva/Screen%20Shot%202020-08-18%20at%2012.06.47%20PM.png?dl=0)
+![screenshot](https://www.dropbox.com/s/mvmfh7k6db9mazw/Screenshot%202023-03-10%20at%2012.43.02%20PM.png?dl=1)
 
-As you build, your Templates and Template Part block grammar **are saved to the database**, which can be accessed under the Appearance menu:
+As you build, your Templates and Template Part block grammar **are saved to the database**, which can be accessed on the `Editor` under the `Template Parts` section:
 
-![screenshot](https://dl.dropbox.com/s/bgo15p7xmt8pdt4/Screen%20Shot%202020-08-18%20at%2012.15.57%20PM.png?dl=0)
+![screenshot](https://www.dropbox.com/s/d923uukrexvlmll/Screenshot%202023-03-10%20at%2012.44.33%20PM.png?dl=1)
 
-You can even edit Templates and Template Parts individually from the Appearance menu:
+You can even edit Templates and Template Parts individually from the `Editor`:
 
-![screenshot](https://dl.dropbox.com/s/irxr0m3ztmswc2l/Screen%20Shot%202020-08-18%20at%2012.17.53%20PM.png?dl=0)
+![screenshot](https://www.dropbox.com/s/5lq5tuidu1ah6es/Screenshot%202023-03-10%20at%2012.48.17%20PM.png?dl=1)
 
 ---
 
@@ -108,37 +111,32 @@ You can even edit Templates and Template Parts individually from the Appearance 
 
 When you're finished building your site, you can **export the your changes from the "Tools" menu**:
 
-![screenshot](https://dl.dropbox.com/s/xhimdjroyrgih9a/Screen%20Shot%202020-08-18%20at%2012.05.09%20PM.png?dl=0)
+![screenshot](https://www.dropbox.com/s/p9j44ao48wtd3pq/Screenshot%202023-03-10%20at%2012.54.47%20PM.png?dl=1)
 
 This action will export all of the Block Grammar into their respective Template and Template Part files. This feature is similar to ACF's [Local JSON](https://www.advancedcustomfields.com/resources/local-json/).
 
-Place the exported Templates and Template Parts files into your theme:
+After updating Templates or Template Parts, the whole theme can be exported:
 
-![screenshot](https://dl.dropbox.com/s/vd40hcty2668bq6/kapture%202020-08-18%20at%2012.10.41.gif?dl=0)
+![screenshot](https://www.dropbox.com/s/ywmhndvcmxwqq7b/Screenshot%202023-03-10%20at%2012.58.57%20PM.png?dl=1)
 
 Everything you built in the Site Editor, is now available as code in your theme, which could be checked into version control or shipped to a client.
 
 ![screenshot](https://dl.dropbox.com/s/w6mwivtu36cv7px/Screen%20Shot%202020-08-18%20at%2012.21.16%20PM.png?dl=0)
 
-If you look close, you'll see an additional `postID` paramenter in the Template Part grammar:
-
-```html
-<!-- wp:template-part {"postID":94,"slug":"header","theme":"yourtheme"} /-->
-```
-
-This informs WordPress that the Header is also saved in the database, under `postID: 94`.
+> **Note**
+> A previous version of this document mentioend that `postID` was part of an exported Template Part, which does not seem the case anymore. ref: <https://github.com/WordPress/gutenberg/pull/26812#issuecomment-830000230>
 
 ---
 
 ## Global Styles via Theme JSON
 
-Block based themes support an `experimental-theme.json` file. WordPress parses this file and makes these CSS variables available, without any need to write CSS. This feature feels similar to [Theme UI](https://theme-ui.com/home).
+Block based themes support an `theme.json` file. WordPress parses this file and makes these CSS variables available, without any need to write CSS. This feature feels similar to [Theme UI](https://theme-ui.com).
 
-The `experimental-theme.json` file:
+The `theme.json` file:
 
-* Creates CSS variables (also called CSS custom properties) that can be used to style blocks both on the front and in the editor.
-* Sets global styles.
-* Sets styles for individual block types.
+- Creates CSS variables (also called CSS custom properties) that can be used to style blocks both on the front and in the editor.
+- Sets global styles.
+- Sets styles for individual block types.
 
 The following example would set a global CSS variable for all  `<h2>` Blocks:
 
@@ -177,18 +175,18 @@ Block based themes will continue to leverage `add_theme_support()` as an "opt-in
 
 The following features are:
 
-* `align-wide`
-* `block-nav-menus`
-* `custom-line-height`
-* `custom-units`
-* `dark-editor-style`
-* `editor-color-palette`
-* `editor-gradient-presets`
-* `editor-font-sizes`
-* `experimental-custom-spacing`
-* `experimental-link-color`
-* `responsive-embeds`
-* `wp-block-styles`
+- `align-wide`
+- `block-nav-menus`
+- `custom-line-height`
+- `custom-units`
+- `dark-editor-style`
+- `editor-color-palette`
+- `editor-gradient-presets`
+- `editor-font-sizes`
+- `experimental-custom-spacing`
+- `experimental-link-color`
+- `responsive-embeds`
+- `wp-block-styles`
 
 This example uses `editor-color-palette` to set default colors in the Block Editor:
 
@@ -209,6 +207,7 @@ function yourtheme_setup_theme_supported_features() {
 }
 add_action( 'after_setup_theme', 'yourtheme_setup_theme_supported_features' );
 ```
+
 This would be helpful if you needed to set your client's branding colors as defaults in the Block Editor:
 
 ![screenshot](https://dl.dropbox.com/s/qyucddgsub2skn4/Screen%20Shot%202020-08-19%20at%208.06.49%20AM.png?dl=0)
@@ -217,4 +216,4 @@ Learn more about available [Theme Support](https://developer.wordpress.org/block
 
 ---
 
-Learn more https://developer.wordpress.org/block-editor/tutorials/block-based-themes/
+Learn more <https://developer.wordpress.org/block-editor/how-to-guides/themes/>
