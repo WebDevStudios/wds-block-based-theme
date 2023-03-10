@@ -1,16 +1,23 @@
 <?php
+/**
+ * _s functions and definitions.
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package wds_block_based_theme
+ */
 
 /**
  * Enqueue theme styles.
  */
 function wds_block_based_theme_scripts() {
-		wp_enqueue_style(
-			'wdsbbt-theme-style',
-			get_stylesheet_directory_uri() . '/style.css',
-			array(),
-			filemtime( dirname( __FILE__ ) . '/style.css' )
-		);
-	}
+	wp_enqueue_style(
+		'wdsbbt-theme-style',
+		get_stylesheet_directory_uri() . '/style.css',
+		array(),
+		filemtime( dirname( __FILE__ ) . '/style.css' )
+	);
+}
 add_action( 'wp_enqueue_scripts', 'wds_block_based_theme_scripts' );
 
 /**
@@ -28,36 +35,40 @@ function wds_block_based_theme_setup() {
 	add_theme_support( 'align-wide' );
 	add_theme_support( 'custom-units' );
 	add_theme_support( 'block-nav-menus' );
-	add_theme_support( 'editor-color-palette',
-		[
-			[
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
 				'name'  => __( 'strong magenta', 'wdsbbt' ),
 				'slug'  => 'strong-magenta',
 				'color' => '#a156b4',
-			],
-			[
+			),
+			array(
 				'name'  => __( 'very light gray', 'wdsbbt' ),
 				'slug'  => 'very-light-gray',
 				'color' => '#f1f1f1',
-			],
-		]
+			),
+		)
 	);
-	add_theme_support( 'editor-font-sizes', array(
+	add_theme_support(
+		'editor-font-sizes',
 		array(
-			'name' => __( 'Small', 'wdsbbt' ),
-			'size' => 12,
-			'slug' => 'small',
-		),
-		array(
-			'name' => __( 'Regular', 'wdsbbt' ),
-			'size' => 16,
-			'slug' => 'regular',
-		),
-		array(
-			'name' => __( 'Large', 'wdsbbt' ),
-			'size' => 36,
-			'slug' => 'large',
-		),
-	) );
-};
+			array(
+				'name' => __( 'Small', 'wdsbbt' ),
+				'size' => 12,
+				'slug' => 'small',
+			),
+			array(
+				'name' => __( 'Regular', 'wdsbbt' ),
+				'size' => 16,
+				'slug' => 'regular',
+			),
+			array(
+				'name' => __( 'Large', 'wdsbbt' ),
+				'size' => 36,
+				'slug' => 'large',
+			),
+		)
+	);
+}
 add_action( 'after_setup_theme', 'wds_block_based_theme_setup' );

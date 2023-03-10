@@ -49,7 +49,7 @@
 		 Multiple valid prefixes can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
-<property name="prefixes" type="array" value="Testing\testing_theme,testing_theme" />
+<property name="prefixes" type="array" value="Testing\wdsbbt,wdsbbt,wds_block_based_theme_" />
 
 		</properties>
 	</rule>
@@ -58,7 +58,7 @@
 		 Multiple valid text domains can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-<property name="text_domain" type="array" value="testing_theme"/>
+<property name="text_domain" type="array" value="wdsbbt"/>
 
 		</properties>
 	</rule>
