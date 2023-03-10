@@ -1,6 +1,6 @@
 # WDS Block Based Theme
 
-A block based theme, which supports full site editing. Learn more about building [Block Based Themes](https://developer.wordpress.org/block-editor/tutorials/block-based-themes/) for WordPress.
+A block based theme, which supports full site editing. Learn more about building [Block Based Themes](https://developer.wordpress.org/themes/block-themes/) for WordPress.
 
 > **Note**
 > With the release of WordPress 5.9, Site Editing is available as part of WordPress without installing Gutenberg. However, this theme started when these features were still experimental, and should not (yet) be used in a production environment.
