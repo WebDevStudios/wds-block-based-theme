@@ -95,15 +95,15 @@ theme
 
 **Use the Site Editor** to build your site:
 
-![screenshot](https://www.dropbox.com/s/mvmfh7k6db9mazw/Screenshot%202023-03-10%20at%2012.43.02%20PM.png?dl=1)
+![screenshot](https://dl.dropbox.com/s/mvmfh7k6db9mazw/Screenshot%202023-03-10%20at%2012.43.02%20PM.png?dl=0)
 
 As you build, your Templates and Template Part block grammar **are saved to the database**, which can be accessed on the `Editor` under the `Template Parts` section:
 
-![screenshot](https://www.dropbox.com/s/d923uukrexvlmll/Screenshot%202023-03-10%20at%2012.44.33%20PM.png?dl=1)
+![screenshot](https://dl.dropbox.com/s/d923uukrexvlmll/Screenshot%202023-03-10%20at%2012.44.33%20PM.png?dl=0)
 
 You can even edit Templates and Template Parts individually from the `Editor`:
 
-![screenshot](https://www.dropbox.com/s/5lq5tuidu1ah6es/Screenshot%202023-03-10%20at%2012.48.17%20PM.png?dl=1)
+![screenshot](https://dl.dropbox.com/s/5lq5tuidu1ah6es/Screenshot%202023-03-10%20at%2012.48.17%20PM.png?dl=0)
 
 ---
 
@@ -111,13 +111,13 @@ You can even edit Templates and Template Parts individually from the `Editor`:
 
 When you're finished building your site, you can **export the your changes from the "Tools" menu**:
 
-![screenshot](https://www.dropbox.com/s/p9j44ao48wtd3pq/Screenshot%202023-03-10%20at%2012.54.47%20PM.png?dl=1)
+![screenshot](https://dl.dropbox.com/s/p9j44ao48wtd3pq/Screenshot%202023-03-10%20at%2012.54.47%20PM.png?dl=0)
 
 This action will export all of the Block Grammar into their respective Template and Template Part files. This feature is similar to ACF's [Local JSON](https://www.advancedcustomfields.com/resources/local-json/).
 
 After updating Templates or Template Parts, the whole theme can be exported:
 
-![screenshot](https://www.dropbox.com/s/ywmhndvcmxwqq7b/Screenshot%202023-03-10%20at%2012.58.57%20PM.png?dl=1)
+![screenshot](https://dl.dropbox.com/s/ywmhndvcmxwqq7b/Screenshot%202023-03-10%20at%2012.58.57%20PM.png?dl=0)
 
 Everything you built in the Site Editor, is now available as code in your theme, which could be checked into version control or shipped to a client.
 
