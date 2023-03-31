@@ -1,61 +1,60 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.2/theme.json",
-	"version": 2,
 	"settings": {
 		"color": {
 			"palette": [
 				{
-					"slug": "strong-magenta",
 					"color": "#a156b4",
-					"name": "Strong magenta"
+					"name": "Strong magenta",
+					"slug": "strong-magenta"
 				},
 				{
-					"slug": "very-light-gray",
 					"color": "#f1f1f1",
-					"name": "Very light gray"
+					"name": "Very light gray",
+					"slug": "very-light-gray"
 				}
 			]
 		},
-		"typography": {
-			"fontSizes": [
-				{
-					"slug": "small",
-					"size": "0.5rem"
-				},
-				{
-					"slug": "regular",
-					"size": "1rem"
-				},
-				{
-					"slug": "large",
-					"size": "2rem"
-				}
-			],
-			"fontFamilies": []
-		},
 		"custom": {
 			"lineHeight": {
-				"small": "1.3",
+				"large": "2.5",
 				"medium": "2",
-				"large": "2.5"
+				"small": "1.3"
 			}
 		},
-		"blocks": []
+		"typography": {
+			"fontFamilies": [],
+			"fontSizes": [
+				{
+					"size": "0.5rem",
+					"slug": "small"
+				},
+				{
+					"size": "1rem",
+					"slug": "regular"
+				},
+				{
+					"size": "2rem",
+					"slug": "large"
+				}
+			]
+		}
 	},
 	"styles": {
-		"color": {
-			"background": "var(--wp--preset--color--very-light-gray)"
-		},
 		"blocks": {
+			"core/group": {
+				"color": {
+					"background": "#ffffff"
+				}
+			},
 			"core/heading": {
 				"elements": {
 					"h2": {
+						"color": {
+							"text": "var( --wp--preset--color--strong-magenta )"
+						},
 						"typography": {
 							"fontSize": "var(--wp--preset--font-size--large)",
 							"lineHeight": "var(--wp--preset--line-height--medium)"
-						},
-						"color": {
-							"text": "var( --wp--preset--color--strong-magenta )"
 						}
 					}
 				}
@@ -64,12 +63,12 @@
 				"typography": {
 					"fontSize": "calc(10px * var(--wp--preset--font-size--regular)"
 				}
-			},
-			"core/group": {
-				"color": {
-					"background": "#ffffff"
-				}
 			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--very-light-gray)"
 		}
-	}
+	},
+	"version": 2,
+	"$schema": "https://schemas.wp.org/trunk/theme.json"
 }
