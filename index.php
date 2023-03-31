@@ -1,1 +1,2 @@
-<?php // silence is golden.
+<?php // phpcs:ignore PEAR.Commenting.FileComment.Missing
+// Silence is golden.
