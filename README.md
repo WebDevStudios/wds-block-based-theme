@@ -10,6 +10,7 @@ A block based theme, which supports full site editing. Learn more about building
 ## Table of Contents
 
 - [WDS Block Based Theme](#wds-block-based-theme)
+  - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
   - [Theme Installation](#theme-installation)
   - [Glossary](#glossary)
@@ -156,7 +157,7 @@ The following example would set a global CSS variable for all  `<h2>` Blocks:
   "core/heading/h2": {
     "styles": {
       "color": {
-        "text": "var( --wp--preset--color--strong-magenta )"
+        "text": "var( --wp--preset--color--primary )"
       }
     }
   }
