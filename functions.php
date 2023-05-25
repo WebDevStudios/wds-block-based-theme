@@ -8,7 +8,7 @@
  */
 
 /**
- * Enqueue theme styles to theme.
+ * Enqueue theme styles.
  */
 function wds_block_based_theme_scripts() {
 	wp_enqueue_style(
